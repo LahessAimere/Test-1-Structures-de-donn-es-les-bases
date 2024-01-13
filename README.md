@@ -44,6 +44,21 @@ End
 ```
 ## Question 2 : Sous-ensemble avec somme donnée
 ```bash
+Name: SubsetSumExistsOrNot
+Result: Détermine s’il existe un sous-ensemble du tableau dont la somme est égale à la somme cible
+Begin
+    let sum
+
+    for i = 0 to size - 1; i++
+        for j = i + 1 to size; j++
+            if tab[i] + tab[j] = sum
+            return true
+            end if
+        end for
+    end for
+
+    return false
+End
 ```
 ## Question 3 : reverse()
 ### Taux de compléxité d'un tableau de chaîne inversé : *0()*
