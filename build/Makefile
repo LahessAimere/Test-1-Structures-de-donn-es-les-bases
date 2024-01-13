@@ -129,30 +129,6 @@ tp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/build
 .PHONY : tp/fast
 
-src/Array.o: src/Array.cpp.o
-.PHONY : src/Array.o
-
-# target to build an object file
-src/Array.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/src/Array.cpp.o
-.PHONY : src/Array.cpp.o
-
-src/Array.i: src/Array.cpp.i
-.PHONY : src/Array.i
-
-# target to preprocess a source file
-src/Array.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/src/Array.cpp.i
-.PHONY : src/Array.cpp.i
-
-src/Array.s: src/Array.cpp.s
-.PHONY : src/Array.s
-
-# target to generate assembly for a file
-src/Array.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/src/Array.cpp.s
-.PHONY : src/Array.cpp.s
-
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -186,9 +162,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tp"
-	@echo "... src/Array.o"
-	@echo "... src/Array.i"
-	@echo "... src/Array.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tp.dir/src/Array.cpp.o"
-  "CMakeFiles/tp.dir/src/Array.cpp.o.d"
   "CMakeFiles/tp.dir/src/main.cpp.o"
   "CMakeFiles/tp.dir/src/main.cpp.o.d"
   "tp"
