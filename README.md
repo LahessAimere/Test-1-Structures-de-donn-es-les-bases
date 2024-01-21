@@ -61,8 +61,26 @@ Begin
 End
 ```
 ## Question 3 : reverse()
-### Taux de compléxité d'un tableau de chaîne inversé : *0()*
+### Taux de compléxité d'un tableau de chaîne inversé : *0(n)*
 ```bash
+Name: Reverse
+Result: Inverse le chaînage d'une liste chaînée
+Begin
+    let current = head
+    let prev = null
+    let next = null
+
+    while current is not null
+        next = current.next    
+        current.next = prev 
+
+        prev = current
+        current = next
+    end while
+
+    tail = head
+    head = prev
+End
 ```
 ## Question 4 : concat()
 ```bash
