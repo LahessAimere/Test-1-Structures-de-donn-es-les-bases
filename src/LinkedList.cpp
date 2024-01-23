@@ -126,6 +126,30 @@ namespace Data
         this->_tail = this->_head;
         this->_head = prev;
     }
+
+    template<class Datatype>
+    void LinkedList<Datatype>::concat(LinkedList<Datatype>& otherList)
+    {
+        // Vérifier si l'une des listes est vide
+        if (otherList._head == nullptr) {
+        return;
+    }
+        // Concaténer la liste actuelle avec "otherList"
+        if (this->_tail != nullptr)
+        {
+        this->_tail->_next = otherList._head;
+        this->_tail = otherList._tail;
+        }
+        else
+        {
+        this->_head = otherList._head;
+        this->_tail = otherList._tail;
+        }
+
+        // Fusionner la liste triée concaténée
+        this->reverse(); // Inverser la liste (pour la mettre par ordre décroissant)
+        this->reverse(); // Inverser à nouveau pour la mettre par l'ordre croissant
+        }
     template class LinkedList<int>;
     template class LinkedList<float>;
 }

@@ -26,6 +26,8 @@ End
 ```
 ### Taux de compléxité pour un tableau non trié : *O(n²)*
 ```bash
+  Name: SmallGapWithUnsortedArray
+  Result: Donne la valeur la plus petite entre deux nombres du tableau
   Begin
     let smallestGap = tab[1] - tab[0]
 
@@ -84,4 +86,26 @@ End
 ```
 ## Question 4 : concat()
 ```bash
+Name: Concat
+Result: Concatène la liste L1 avec une autre liste L2
+Begin
+    let L1
+    let L2
+
+    if L2._head == null
+        return
+    end if
+
+    if L1._tail != null
+        L1._tail._next = L2._head;
+        L1._tail = L2._tail;
+    end if
+    else
+        L1._head = L2._head;
+        L1._tail = L2._tail;
+    end else
+    
+    L1.reverse()
+    L1.reverse() 
+End
 ```

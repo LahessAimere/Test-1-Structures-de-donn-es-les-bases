@@ -1,3 +1,4 @@
+#include "LinkedList.hpp"
 #include <iostream>
 
 int SmallestGapWithSortedArray(int* tab, int size) {

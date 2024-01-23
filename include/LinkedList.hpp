@@ -22,6 +22,7 @@ namespace Data
         void removeHead();
         void removeTail();
         void reverse();
+        void concat(LinkedList<Datatype>& otherList);
     };
 }
 #endif // LINKED_LIST_HPP
